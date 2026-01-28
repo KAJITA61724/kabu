@@ -1,0 +1,49 @@
+name: 自動データ収集
+
+on:
+  schedule:
+    # 平日9:00-15:00（JST）に5分おきに実行
+    # UTC時刻で指定（JST - 9時間）
+    - cron: '0-59/5 0-6 * * 1-5'  # 月-金 9:00-15:00 JST
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  collect-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: チェックアウト
+      uses: actions/checkout@v4
+      
+    - name: Pythonセットアップ
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: 依存関係インストール
+      run: |
+        pip install yfinance pandas jpholiday
+        
+    - name: データ収集実行
+      run: |
+        cd RakutenTradingSystem/data_collection
+        python3 automated_data_collection.py
+        
+    - name: データベースをアップロード（artifact）
+      uses: actions/upload-artifact@v4
+      with:
+        name: market-data-${{ github.run_number }}
+        path: RakutenTradingSystem/data/market_data.db
+        retention-days: 90
+        
+    - name: 統計表示
+      run: |
+        python3 -c "
+        import sqlite3, pandas as pd
+        conn = sqlite3.connect('RakutenTradingSystem/data/market_data.db')
+        total = pd.read_sql('SELECT COUNT(*) as c FROM chart_data_5min', conn).iloc[0]['c']
+        latest = pd.read_sql('SELECT MAX(datetime) as dt FROM chart_data_5min', conn).iloc[0]['dt']
+        print(f'✅ 総件数: {total:,}件')
+        print(f'⏰ 最新: {latest}')
+        conn.close()
+        "
