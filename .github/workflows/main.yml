@@ -1,5 +1,0 @@
-cd /workspaces/kabu
-git add .github/workflows/data-collection.yml
-git add RakutenTradingSystem/data_collection/
-git commit -m "GitHub Actionsで完全自動化"
-git push
