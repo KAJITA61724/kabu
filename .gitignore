@@ -33,7 +33,6 @@ env/
 *.swp
 *.swo
 *~
-.DS_Store
 
 # Database
 *.db
@@ -46,8 +45,6 @@ logs/
 
 # Data files
 data/
-*.csv
-*.json
 *.pkl
 *.pickle
 
