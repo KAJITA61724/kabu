@@ -1,0 +1,33 @@
+@echo off
+echo ==========================================
+echo デイトレードシステム起動
+echo ==========================================
+
+cd /d "C:\Users\akane\RakutenTradingSystem"
+
+echo MARKETSPEEDⅡ起動確認中...
+tasklist /FI "IMAGENAME eq MarketSpeed.exe" 2>NUL | find /I /N "MarketSpeed.exe">NUL
+if "%ERRORLEVEL%"=="1" (
+    echo ❌ MARKETSPEEDⅡが起動していません
+    echo    MARKETSPEEDⅡを起動してからもう一度実行してください
+    pause
+    exit /b 1
+)
+
+echo ✅ MARKETSPEEDⅡ起動確認済み
+
+echo Excel起動確認中...
+tasklist /FI "IMAGENAME eq EXCEL.EXE" 2>NUL | find /I /N "EXCEL.EXE">NUL
+if "%ERRORLEVEL%"=="1" (
+    echo Excel起動中...
+    start excel
+    timeout /t 5
+)
+
+echo 仮想環境アクティベート中...
+call trading_env\Scripts\activate.bat
+
+echo システム起動中...
+python daytrading_system.py
+
+pause

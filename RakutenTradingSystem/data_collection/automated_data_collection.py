@@ -18,18 +18,81 @@ logging.basicConfig(
 )
 
 class AutomatedDataCollector:
-    def __init__(self, db_path='../data/market_data.db'):
+    def __init__(self, db_path=None):
+        # 実行場所に応じて適切なパスを選択
+        if db_path is None:
+            import os
+            possible_paths = [
+                'data/market_data.db',          # RakutenTradingSystemから実行
+                '../data/market_data.db',       # data_collectionから実行
+            ]
+            for path in possible_paths:
+                dir_path = os.path.dirname(path)
+                if dir_path and not os.path.exists(dir_path):
+                    continue
+                db_path = path
+                break
+            if db_path is None:
+                db_path = 'data/market_data.db'  # フォールバック
+                
         self.db_path = db_path
         self.symbols = []
+        self._ensure_database()
+        
+    def _ensure_database(self):
+        """データベースとテーブルを初期化"""
+        import os
+        os.makedirs(os.path.dirname(self.db_path), exist_ok=True)
+        
+        conn = sqlite3.connect(self.db_path)
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS chart_data_5min (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                symbol TEXT NOT NULL,
+                datetime TEXT NOT NULL,
+                open REAL,
+                high REAL,
+                low REAL,
+                close REAL,
+                volume INTEGER,
+                adj_close REAL,
+                collected_at TEXT,
+                UNIQUE(symbol, datetime)
+            )
+        ''')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_symbol_datetime ON chart_data_5min(symbol, datetime)')
+        conn.commit()
+        conn.close()
+        logging.info(f"データベース準備完了: {self.db_path}")
         
     def load_symbols(self):
         """prime_symbols.csvから銘柄リストを読み込み"""
+        import os
+        
+        # 複数のパスを試す（実行場所に応じて）
+        possible_paths = [
+            'prime_symbols.csv',          # RakutenTradingSystemから実行
+            '../prime_symbols.csv',       # data_collectionから実行
+            'RakutenTradingSystem/prime_symbols.csv'  # ルートから実行
+        ]
+        
+        csv_path = None
+        for path in possible_paths:
+            if os.path.exists(path):
+                csv_path = path
+                break
+        
+        if not csv_path:
+            logging.error(f"銘柄リストが見つかりません。試したパス: {possible_paths}")
+            logging.error(f"現在のディレクトリ: {os.getcwd()}")
+            return False
+            
         try:
-            df = pd.read_csv('../prime_symbols.csv')
+            df = pd.read_csv(csv_path)
             if 'avg_volume' in df.columns:
                 df = df[df['avg_volume'] >= 300000]
             self.symbols = [str(s) + '.T' for s in df['symbol'].tolist()]
-            logging.info(f"対象銘柄: {len(self.symbols)}銘柄")
+            logging.info(f"対象銘柄: {len(self.symbols)}銘柄 (from {csv_path})")
             return True
         except Exception as e:
             logging.error(f"銘柄リスト読み込みエラー: {e}")

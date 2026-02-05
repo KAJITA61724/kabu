@@ -1,0 +1,20 @@
+=== 9984 モデル比較レポート ===
+
+モデル性能ランキング（MSE順）:
+1. LinearRegression
+   MSE: 839.8355
+   MAE: 21.2087
+   R²: 0.9508
+
+2. SimpleMovingAverage
+   MSE: 1333.6704
+   MAE: 25.2434
+   R²: 0.0000
+
+3. RandomForest
+   MSE: 11919.0517
+   MAE: 93.7818
+   R²: 0.3018
+
+最優秀モデル: LinearRegression
+MSE: 839.8355

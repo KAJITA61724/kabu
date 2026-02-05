@@ -1,0 +1,270 @@
+nohup: ignoring input
+連続データ収集を開始します...
+
+[2026-01-28 12:45:18] データ収集実行...
+2026-01-28 03:45:19,077 - INFO - ============================================================
+2026-01-28 03:45:19,077 - INFO - データ収集開始: 2026-01-28 03:45:19
+2026-01-28 03:45:19,080 - INFO - 対象銘柄: 216銘柄
+2026-01-28 03:45:23,026 - INFO - 進捗: 50/216
+2026-01-28 03:45:26,927 - INFO - 進捗: 100/216
+2026-01-28 03:45:30,327 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:45:30,565 - INFO - 進捗: 150/216
+2026-01-28 03:45:31,668 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:32,379 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:45:34,449 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:34,976 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:35,464 - INFO - 進捗: 200/216
+2026-01-28 03:45:36,244 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:37,003 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:37,454 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:45:37,792 - INFO - ✅ 収集完了: 208銘柄, 60661件のデータを保存
+2026-01-28 03:45:37,800 - INFO - データベース総件数: 60,661件
+2026-01-28 03:45:37,800 - INFO - ============================================================
+実行時間: 19秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 12:50:37] データ収集実行...
+2026-01-28 03:50:38,512 - INFO - ============================================================
+2026-01-28 03:50:38,512 - INFO - データ収集開始: 2026-01-28 03:50:38
+2026-01-28 03:50:38,515 - INFO - 対象銘柄: 216銘柄
+2026-01-28 03:50:42,406 - INFO - 進捗: 50/216
+2026-01-28 03:50:46,117 - INFO - 進捗: 100/216
+2026-01-28 03:50:49,581 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:50:49,782 - INFO - 進捗: 150/216
+2026-01-28 03:50:50,943 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:51,616 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:50:53,953 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:54,478 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:54,894 - INFO - 進捗: 200/216
+2026-01-28 03:50:55,655 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:56,845 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:57,307 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:50:57,693 - INFO - ✅ 収集完了: 208銘柄, 60858件のデータを保存
+2026-01-28 03:50:57,700 - INFO - データベース総件数: 60,858件
+2026-01-28 03:50:57,700 - INFO - ============================================================
+実行時間: 20秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 12:55:57] データ収集実行...
+2026-01-28 03:55:58,357 - INFO - ============================================================
+2026-01-28 03:55:58,357 - INFO - データ収集開始: 2026-01-28 03:55:58
+2026-01-28 03:55:58,360 - INFO - 対象銘柄: 216銘柄
+2026-01-28 03:56:02,284 - INFO - 進捗: 50/216
+2026-01-28 03:56:06,044 - INFO - 進捗: 100/216
+2026-01-28 03:56:09,410 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:56:09,645 - INFO - 進捗: 150/216
+2026-01-28 03:56:10,743 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:11,456 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 03:56:13,646 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:14,166 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:14,594 - INFO - 進捗: 200/216
+2026-01-28 03:56:15,705 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:16,574 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:17,043 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 03:56:17,393 - INFO - ✅ 収集完了: 208銘柄, 61074件のデータを保存
+2026-01-28 03:56:17,401 - INFO - データベース総件数: 61,074件
+2026-01-28 03:56:17,402 - INFO - ============================================================
+実行時間: 20秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:01:17] データ収集実行...
+2026-01-28 04:01:18,262 - INFO - ============================================================
+2026-01-28 04:01:18,262 - INFO - データ収集開始: 2026-01-28 04:01:18
+2026-01-28 04:01:18,265 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:01:21,962 - INFO - 進捗: 50/216
+2026-01-28 04:01:26,522 - INFO - 進捗: 100/216
+2026-01-28 04:01:30,545 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:01:30,738 - INFO - 進捗: 150/216
+2026-01-28 04:01:32,077 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:01:33,057 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:01:35,827 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:01:36,428 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:01:36,998 - INFO - 進捗: 200/216
+2026-01-28 04:01:38,177 - WARNING - 9437.T: Too Many Requests. Rate limited. Try after a while.
+2026-01-28 04:01:40,225 - WARNING - 9613.T: Too Many Requests. Rate limited. Try after a while.
+2026-01-28 04:01:40,652 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:01:40,979 - INFO - ✅ 収集完了: 208銘柄, 61279件のデータを保存
+2026-01-28 04:01:41,024 - INFO - データベース総件数: 61,279件
+2026-01-28 04:01:41,024 - INFO - ============================================================
+実行時間: 24秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:06:41] データ収集実行...
+2026-01-28 04:06:41,871 - INFO - ============================================================
+2026-01-28 04:06:41,871 - INFO - データ収集開始: 2026-01-28 04:06:41
+2026-01-28 04:06:41,875 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:06:45,932 - INFO - 進捗: 50/216
+2026-01-28 04:06:49,671 - INFO - 進捗: 100/216
+2026-01-28 04:06:53,071 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:06:53,287 - INFO - 進捗: 150/216
+2026-01-28 04:06:54,349 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:06:54,978 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:06:57,067 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:06:57,579 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:06:58,029 - INFO - 進捗: 200/216
+2026-01-28 04:06:58,775 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:06:59,655 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:07:00,111 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:07:00,464 - INFO - ✅ 収集完了: 208銘柄, 61489件のデータを保存
+2026-01-28 04:07:00,474 - INFO - データベース総件数: 61,489件
+2026-01-28 04:07:00,474 - INFO - ============================================================
+実行時間: 19秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:12:00] データ収集実行...
+2026-01-28 04:12:01,203 - INFO - ============================================================
+2026-01-28 04:12:01,203 - INFO - データ収集開始: 2026-01-28 04:12:01
+2026-01-28 04:12:01,206 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:12:05,275 - INFO - 進捗: 50/216
+2026-01-28 04:12:09,151 - INFO - 進捗: 100/216
+2026-01-28 04:12:12,639 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:12:12,861 - INFO - 進捗: 150/216
+2026-01-28 04:12:13,960 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:14,660 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:12:17,039 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:17,538 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:18,018 - INFO - 進捗: 200/216
+2026-01-28 04:12:18,727 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:19,893 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:20,327 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:12:20,671 - INFO - ✅ 収集完了: 208銘柄, 61695件のデータを保存
+2026-01-28 04:12:20,680 - INFO - データベース総件数: 61,695件
+2026-01-28 04:12:20,680 - INFO - ============================================================
+実行時間: 20秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:17:20] データ収集実行...
+2026-01-28 04:17:21,429 - INFO - ============================================================
+2026-01-28 04:17:21,429 - INFO - データ収集開始: 2026-01-28 04:17:21
+2026-01-28 04:17:21,432 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:17:25,487 - INFO - 進捗: 50/216
+2026-01-28 04:17:29,380 - INFO - 進捗: 100/216
+2026-01-28 04:17:32,951 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:17:33,182 - INFO - 進捗: 150/216
+2026-01-28 04:17:34,319 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:35,045 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:17:37,489 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:38,000 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:38,468 - INFO - 進捗: 200/216
+2026-01-28 04:17:39,540 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:40,469 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:40,901 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:17:41,260 - INFO - ✅ 収集完了: 208銘柄, 61901件のデータを保存
+2026-01-28 04:17:41,268 - INFO - データベース総件数: 61,901件
+2026-01-28 04:17:41,268 - INFO - ============================================================
+実行時間: 21秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:22:41] データ収集実行...
+2026-01-28 04:22:41,948 - INFO - ============================================================
+2026-01-28 04:22:41,948 - INFO - データ収集開始: 2026-01-28 04:22:41
+2026-01-28 04:22:41,951 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:22:46,092 - INFO - 進捗: 50/216
+2026-01-28 04:22:50,000 - INFO - 進捗: 100/216
+2026-01-28 04:22:53,640 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:22:53,849 - INFO - 進捗: 150/216
+2026-01-28 04:22:54,974 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:22:55,691 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:22:57,860 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:22:58,403 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:22:58,832 - INFO - 進捗: 200/216
+2026-01-28 04:22:59,556 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:23:00,456 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:23:00,919 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:23:01,300 - INFO - ✅ 収集完了: 208銘柄, 62108件のデータを保存
+2026-01-28 04:23:01,309 - INFO - データベース総件数: 62,108件
+2026-01-28 04:23:01,309 - INFO - ============================================================
+実行時間: 20秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:28:01] データ収集実行...
+2026-01-28 04:28:01,980 - INFO - ============================================================
+2026-01-28 04:28:01,980 - INFO - データ収集開始: 2026-01-28 04:28:01
+2026-01-28 04:28:01,983 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:28:05,927 - INFO - 進捗: 50/216
+2026-01-28 04:28:09,564 - INFO - 進捗: 100/216
+2026-01-28 04:28:12,824 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:28:13,042 - INFO - 進捗: 150/216
+2026-01-28 04:28:14,189 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:14,852 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:28:16,790 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:17,287 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:17,723 - INFO - 進捗: 200/216
+2026-01-28 04:28:18,655 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:19,537 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:19,991 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:28:20,342 - INFO - ✅ 収集完了: 208銘柄, 62317件のデータを保存
+2026-01-28 04:28:20,352 - INFO - データベース総件数: 62,317件
+2026-01-28 04:28:20,352 - INFO - ============================================================
+実行時間: 19秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:33:20] データ収集実行...
+2026-01-28 04:33:21,018 - INFO - ============================================================
+2026-01-28 04:33:21,018 - INFO - データ収集開始: 2026-01-28 04:33:21
+2026-01-28 04:33:21,021 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:33:25,510 - INFO - 進捗: 50/216
+2026-01-28 04:33:29,072 - INFO - 進捗: 100/216
+2026-01-28 04:33:32,406 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:33:32,610 - INFO - 進捗: 150/216
+2026-01-28 04:33:33,677 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:33:34,392 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:33:36,458 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:33:36,986 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:33:37,433 - INFO - 進捗: 200/216
+2026-01-28 04:33:38,871 - WARNING - 9437.T: Too Many Requests. Rate limited. Try after a while.
+2026-01-28 04:33:40,006 - WARNING - 9613.T: Too Many Requests. Rate limited. Try after a while.
+2026-01-28 04:33:40,789 - WARNING - 9681.T: Too Many Requests. Rate limited. Try after a while.
+2026-01-28 04:33:41,370 - INFO - ✅ 収集完了: 208銘柄, 62521件のデータを保存
+2026-01-28 04:33:41,379 - INFO - データベース総件数: 62,521件
+2026-01-28 04:33:41,380 - INFO - ============================================================
+実行時間: 21秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:38:41] データ収集実行...
+2026-01-28 04:38:42,027 - INFO - ============================================================
+2026-01-28 04:38:42,027 - INFO - データ収集開始: 2026-01-28 04:38:42
+2026-01-28 04:38:42,030 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:38:46,228 - INFO - 進捗: 50/216
+2026-01-28 04:38:49,993 - INFO - 進捗: 100/216
+2026-01-28 04:38:53,454 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:38:53,682 - INFO - 進捗: 150/216
+2026-01-28 04:38:54,782 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:38:55,504 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:38:57,600 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:38:58,119 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:38:58,522 - INFO - 進捗: 200/216
+2026-01-28 04:38:59,257 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:39:00,482 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:39:01,341 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:39:01,684 - INFO - ✅ 収集完了: 208銘柄, 62729件のデータを保存
+2026-01-28 04:39:01,692 - INFO - データベース総件数: 62,729件
+2026-01-28 04:39:01,692 - INFO - ============================================================
+実行時間: 20秒
+✅ 収集完了 - 次回は5分後
+
+[2026-01-28 13:44:01] データ収集実行...
+2026-01-28 04:44:02,363 - INFO - ============================================================
+2026-01-28 04:44:02,363 - INFO - データ収集開始: 2026-01-28 04:44:02
+2026-01-28 04:44:02,366 - INFO - 対象銘柄: 216銘柄
+2026-01-28 04:44:06,180 - INFO - 進捗: 50/216
+2026-01-28 04:44:09,860 - INFO - 進捗: 100/216
+2026-01-28 04:44:13,145 - ERROR - $7732.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:44:13,341 - INFO - 進捗: 150/216
+2026-01-28 04:44:14,466 - ERROR - $8028.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:15,259 - ERROR - $8423.T: possibly delisted; no price data found  (period=5d)
+2026-01-28 04:44:17,300 - ERROR - $9062.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:17,812 - ERROR - $9086.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:18,215 - INFO - 進捗: 200/216
+2026-01-28 04:44:18,935 - ERROR - $9437.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:19,778 - ERROR - $9613.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:20,431 - ERROR - $9681.T: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-01-28 04:44:20,794 - INFO - ✅ 収集完了: 208銘柄, 62936件のデータを保存
+2026-01-28 04:44:20,802 - INFO - データベース総件数: 62,936件
+2026-01-28 04:44:20,802 - INFO - ============================================================
+実行時間: 19秒
+✅ 収集完了 - 次回は5分後
+��件数: 62,936件
+2026-01-28 04:44:20,802 - INFO - ============================================================
+実行時間: 19秒
+✅ 収集完了 - 次回は5分後

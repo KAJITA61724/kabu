@@ -1,0 +1,36 @@
+=== 8306 モデル比較レポート ===
+
+📊 モデル性能比較（MAE順）:
+1. LinearRegression
+   MSE: 2.0245
+   MAE: 0.9665
+   R²: 0.4169
+
+2. LightGBM
+   MSE: 5.1203
+   MAE: 1.9532
+   R²: -0.4748
+
+3. RandomForest
+   MSE: 5.5244
+   MAE: 2.0794
+   R²: -0.5912
+
+4. SimpleMovingAverage
+   MSE: 978.3448
+   MAE: 28.2190
+   R²: -280.7991
+
+🏆 最優秀モデル: LinearRegression
+   精度評価: 高精度
+
+🚀 LightGBM性能（2位）:
+   MSE: 5.1203
+   MAE: 1.9532
+   R²: -0.4748
+
+💰 価格予測（LinearRegression）:
+   現在価格: 1970.00
+   予測価格: 1969.19
+   予測変動: -0.81 (-0.04%)
+

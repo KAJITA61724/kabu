@@ -1,0 +1,480 @@
+2025-07-17 21:15:03,579 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 21:15:29,415 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 21:15:29,425 - ERROR - データインポートエラー: Execution failed on sql '
+                SELECT symbol, timestamp, close_price, volume, ma_5min, ma_20min, ma_60min
+                FROM five_minute_data
+                WHERE timestamp >= ?
+                ORDER BY timestamp DESC
+            ': no such column: ma_5min
+2025-07-17 21:16:18,289 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 21:16:18,292 - ERROR - データインポートエラー: Execution failed on sql '
+                SELECT symbol, timestamp, close_price, volume, ma_5min, ma_20min, ma_60min
+                FROM five_minute_data
+                WHERE timestamp >= ?
+                ORDER BY timestamp DESC
+            ': no such column: ma_5min
+2025-07-17 21:16:44,403 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 21:16:44,471 - INFO - 5分足データインポート完了: 3600レコード
+2025-07-17 21:27:27,625 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 21:27:27,630 - INFO - 拡張デモシミュレーション開始: 2025-07-14 - 2025-07-17
+2025-07-17 21:27:27,630 - INFO - 実行方法: ['ml_factcheck', 'strategy_based']
+2025-07-17 21:27:27,630 - INFO - 
+============================================================
+2025-07-17 21:27:27,631 - INFO - ml_factcheck シミュレーション開始
+2025-07-17 21:27:27,631 - INFO - ============================================================
+2025-07-17 21:27:27,631 - INFO - 
+=== 2025-07-14 ml_factcheck デモ取引 ===
+2025-07-17 21:27:27,635 - INFO - ML候補: 0銘柄 (分析日: 2025-07-12)
+2025-07-17 21:27:27,635 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,636 - INFO - 
+=== 2025-07-15 ml_factcheck デモ取引 ===
+2025-07-17 21:27:27,638 - INFO - ML候補: 0銘柄 (分析日: 2025-07-13)
+2025-07-17 21:27:27,639 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,639 - INFO - 
+=== 2025-07-16 ml_factcheck デモ取引 ===
+2025-07-17 21:27:27,642 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,643 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,644 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,646 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,647 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,648 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,650 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,651 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,652 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,653 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,653 - INFO - ML候補: 0銘柄 (分析日: 2025-07-14)
+2025-07-17 21:27:27,653 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,653 - INFO - 
+=== 2025-07-17 ml_factcheck デモ取引 ===
+2025-07-17 21:27:27,659 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,660 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,661 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,662 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,664 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,665 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,667 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,669 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,670 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,672 - ERROR - 特徴量準備エラー: Execution failed on sql '
+                SELECT 
+                    f.timestamp,
+                    f.close_price,
+                    f.volume,
+                    f.ma_5min,
+                    f.ma_20min,
+                    f.ma_60min,
+                    o.bid_price_1,
+                    o.ask_price_1,
+                    o.bid_volume_1,
+                    o.ask_volume_1
+                FROM five_minute_data f
+                LEFT JOIN order_book o ON f.symbol = o.symbol AND f.timestamp = o.timestamp
+                WHERE f.symbol = ? AND f.timestamp >= ? AND f.timestamp <= ?
+                ORDER BY f.timestamp
+            ': no such table: order_book
+2025-07-17 21:27:27,672 - INFO - ML候補: 0銘柄 (分析日: 2025-07-15)
+2025-07-17 21:27:27,672 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,672 - INFO - 
+==================================================
+2025-07-17 21:27:27,672 - INFO - ml_factcheck 結果分析
+2025-07-17 21:27:27,673 - INFO - ==================================================
+2025-07-17 21:27:27,673 - INFO - 取引履歴なし
+2025-07-17 21:27:27,673 - INFO - ml_factcheck セッション結果保存完了
+2025-07-17 21:27:27,674 - INFO - 
+============================================================
+2025-07-17 21:27:27,674 - INFO - strategy_based シミュレーション開始
+2025-07-17 21:27:27,674 - INFO - ============================================================
+2025-07-17 21:27:27,674 - INFO - 
+=== 2025-07-14 strategy_based デモ取引 ===
+2025-07-17 21:27:27,677 - INFO - 戦略候補: 0銘柄 (分析日: 2025-07-12)
+2025-07-17 21:27:27,677 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,677 - INFO - 
+=== 2025-07-15 strategy_based デモ取引 ===
+2025-07-17 21:27:27,680 - INFO - 戦略候補: 0銘柄 (分析日: 2025-07-13)
+2025-07-17 21:27:27,680 - INFO - 候補銘柄なし
+2025-07-17 21:27:27,680 - INFO - 
+=== 2025-07-16 strategy_based デモ取引 ===
+2025-07-17 21:27:27,707 - INFO - 戦略シグナル - シンボル: 9984, シグナル: StrategySignal.HOLD, 信頼度: 0.000, 戦略数: 2
+2025-07-17 21:27:27,729 - INFO - 戦略シグナル - シンボル: 9432, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,751 - INFO - 戦略シグナル - シンボル: 8306, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,774 - INFO - 戦略シグナル - シンボル: 7974, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,796 - INFO - 戦略シグナル - シンボル: 7203, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,819 - INFO - 戦略シグナル - シンボル: 6861, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,841 - INFO - 戦略シグナル - シンボル: 6758, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,869 - INFO - 戦略シグナル - シンボル: 6501, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:27,891 - INFO - 戦略シグナル - シンボル: 4519, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,914 - INFO - 戦略シグナル - シンボル: 4063, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:27,914 - INFO - 戦略候補: 9銘柄 (分析日: 2025-07-14)
+2025-07-17 21:27:27,914 - INFO - 候補銘柄: 9銘柄
+2025-07-17 21:27:27,938 - INFO - 戦略シグナル - シンボル: 9432, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:27,940 - INFO - エントリー: 9432 buy 2800株 @178 信頼度:1.000 理由:戦略シグナル (1戦略, C:1.000)
+2025-07-17 21:27:27,963 - INFO - 戦略シグナル - シンボル: 8306, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:27,965 - INFO - エントリー: 8306 sell 300株 @1223 信頼度:1.000 理由:戦略シグナル (1戦略, C:1.000)
+2025-07-17 21:27:27,988 - INFO - 戦略シグナル - シンボル: 7974, シグナル: StrategySignal.HOLD, 信頼度: 0.000, 戦略数: 2
+2025-07-17 21:27:27,990 - INFO - 
+=== 2025-07-17 strategy_based デモ取引 ===
+2025-07-17 21:27:28,014 - INFO - 戦略シグナル - シンボル: 9984, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,037 - INFO - 戦略シグナル - シンボル: 9432, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:28,059 - INFO - 戦略シグナル - シンボル: 8306, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,080 - INFO - 戦略シグナル - シンボル: 7974, シグナル: StrategySignal.HOLD, 信頼度: 0.000, 戦略数: 2
+2025-07-17 21:27:28,103 - INFO - 戦略シグナル - シンボル: 7203, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,125 - INFO - 戦略シグナル - シンボル: 6861, シグナル: StrategySignal.HOLD, 信頼度: 0.000, 戦略数: 2
+2025-07-17 21:27:28,149 - INFO - 戦略シグナル - シンボル: 6758, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,172 - INFO - 戦略シグナル - シンボル: 6501, シグナル: StrategySignal.SELL, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:28,193 - INFO - 戦略シグナル - シンボル: 4519, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 2
+2025-07-17 21:27:28,216 - INFO - 戦略シグナル - シンボル: 4063, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,216 - INFO - 戦略候補: 8銘柄 (分析日: 2025-07-15)
+2025-07-17 21:27:28,217 - INFO - 候補銘柄: 8銘柄
+2025-07-17 21:27:28,242 - INFO - 戦略シグナル - シンボル: 9984, シグナル: StrategySignal.BUY, 信頼度: 1.000, 戦略数: 1
+2025-07-17 21:27:28,243 - INFO - エントリー: 9984 buy 100株 @5204 信頼度:1.000 理由:戦略シグナル (1戦略, C:1.000)
+2025-07-17 21:27:28,245 - INFO - 決済: 9432 1日保有 損益: -9,520円 (利回り: -1.9%)
+2025-07-17 21:27:28,247 - INFO - 決済: 8306 1日保有 損益: -4,665円 (利回り: -1.3%)
+2025-07-17 21:27:28,251 - INFO - 
+==================================================
+2025-07-17 21:27:28,251 - INFO - strategy_based 結果分析
+2025-07-17 21:27:28,251 - INFO - ==================================================
+2025-07-17 21:27:28,267 - INFO -    総取引数: 2
+2025-07-17 21:27:28,268 - INFO -    勝率: 0.0% (0/2)
+2025-07-17 21:27:28,268 - INFO -    総損益: -14,185円
+2025-07-17 21:27:28,268 - INFO -    利回り: -26.26%
+2025-07-17 21:27:28,268 - INFO -    平均信頼度: 1.000
+2025-07-17 21:27:28,268 - INFO -    平均利益: 0円
+2025-07-17 21:27:28,268 - INFO -    平均損失: -7,092円
+2025-07-17 21:27:28,269 - INFO -    プロフィットファクター: 0.00
+2025-07-17 21:27:28,270 - ERROR - セッション結果保存エラー: table enhanced_demo_trades has 19 columns but 18 values were supplied
+2025-07-17 21:27:28,271 - INFO - 
+============================================================
+2025-07-17 21:27:28,271 - INFO - 方法比較結果
+2025-07-17 21:27:28,271 - INFO - ============================================================
+2025-07-17 21:27:28,271 - INFO - 
+【strategy_based】
+2025-07-17 21:27:28,271 - INFO -   取引数: 2
+2025-07-17 21:27:28,271 - INFO -   勝率: 0.0%
+2025-07-17 21:27:28,271 - INFO -   総損益: -14,185円
+2025-07-17 21:27:28,271 - INFO -   利回り: -26.26%
+2025-07-17 21:27:28,272 - INFO -   平均信頼度: 1.000
+2025-07-17 23:08:49,213 - INFO - ファンダメンタルズデータベース初期化完了
+2025-07-17 23:08:49,215 - INFO - ファンダメンタルズデータベース初期化完了
+2025-07-17 23:08:49,216 - INFO - ファンダメンタルズデータベース初期化完了
+2025-07-17 23:08:49,220 - INFO - 拡張デモ取引データベース初期化完了
+2025-07-17 23:08:49,221 - INFO - ファンダメンタルズデータベース初期化完了
+2025-07-17 23:08:49,221 - INFO - デモトレードシステム初期化完了
+2025-07-17 23:08:49,222 - WARNING - 業界マッピングファイルが見つかりません。デフォルトを使用します。
+2025-07-17 23:08:49,223 - INFO - 拡張データベース初期化完了
+2025-07-17 23:08:51,159 - INFO - ファンダメンタルズデータ取得完了: 7203
+2025-07-17 23:08:53,663 - INFO - ファンダメンタルズデータ取得完了: 9984
+2025-07-17 23:08:56,185 - INFO - ファンダメンタルズデータ取得完了: 6758
+2025-07-17 23:08:58,672 - INFO - ファンダメンタルズデータ取得完了: 8306
+2025-07-17 23:09:01,229 - INFO - ファンダメンタルズデータ取得完了: 6501
+2025-07-17 23:09:03,647 - INFO - ファンダメンタルズデータ取得完了: 4063
+2025-07-17 23:09:06,066 - INFO - ファンダメンタルズデータ取得完了: 9432
+2025-07-17 23:09:08,543 - INFO - ファンダメンタルズデータ取得完了: 8035
+2025-07-17 23:09:10,972 - INFO - ファンダメンタルズデータ取得完了: 4519
+2025-07-17 23:09:13,305 - INFO - ファンダメンタルズデータ取得完了: 6861
+2025-07-17 23:09:14,330 - INFO - ファンダメンタルズデータ収集完了: 10/10 銘柄
+2025-07-17 23:09:14,506 - INFO - 業界別平均計算完了: 9 業界
+2025-07-17 23:09:14,562 - ERROR - モデル学習エラー: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.

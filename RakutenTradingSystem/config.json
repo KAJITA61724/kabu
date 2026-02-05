@@ -1,0 +1,38 @@
+{
+    "system_settings": {
+        "csv_mode": true,
+        "database_path": "trading_data.db",
+        "csv_base_path": "csv_data",
+        "backup_path": "backups",
+        "max_symbols": 100,
+        "excel_visible": false,
+        "excel_alerts": false
+    },
+    "collection_settings": {
+        "default_timeframe": "5M",
+        "default_count": 1000,
+        "symbol_delay": 1.0,
+        "calculation_wait": 2.0,
+        "batch_size": 100
+    },
+    "timeframe_mapping": {
+        "1M": "1分足",
+        "5M": "5分足",
+        "15M": "15分足",
+        "30M": "30分足",
+        "1H": "60分足"
+    },
+    "rss_functions": {
+        "datetime": "分足日時",
+        "open": "分足始値",
+        "high": "分足高値",
+        "low": "分足安値",
+        "close": "分足終値",
+        "volume": "分足出来高"
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(levelname)s - %(message)s",
+        "file_prefix": "data_collector"
+    }
+}
