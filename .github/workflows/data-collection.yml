@@ -2,9 +2,11 @@ name: 自動データ収集
 
 on:
   schedule:
-    # 平日9:00-15:00（JST）に5分おきに実行
+    # 平日の市場時間中に3回実行（4時間制限対策）
     # UTC時刻で指定（JST - 9時間）
-    - cron: '0-59/5 0-6 * * 1-5'  # 月-金 9:00-15:00 JST
+    - cron: '0 0 * * 1-5'   # 月-金 9:00 JST
+    - cron: '0 3 * * 1-5'   # 月-金 12:00 JST
+    - cron: '0 5 * * 1-5'   # 月-金 14:00 JST
   workflow_dispatch:  # 手動実行も可能
 
 jobs:
@@ -51,9 +53,9 @@ jobs:
             try:
                 conn = sqlite3.connect(db_path)
                 cursor = conn.cursor()
-                cursor.execute('SELECT COUNT(*) FROM chart_data_5min')
+                cursor.execute('SELECT COUNT(*) FROM chart_data_1min')
                 total = cursor.fetchone()[0]
-                cursor.execute('SELECT MAX(datetime) FROM chart_data_5min')
+                cursor.execute('SELECT MAX(datetime) FROM chart_data_1min')
                 latest = cursor.fetchone()[0]
                 print(f'✅ 総件数: {total:,}件')
                 print(f'⏰ 最新: {latest}')

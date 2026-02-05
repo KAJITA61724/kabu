@@ -46,7 +46,7 @@ class AutomatedDataCollector:
         
         conn = sqlite3.connect(self.db_path)
         conn.execute('''
-            CREATE TABLE IF NOT EXISTS chart_data_5min (
+            CREATE TABLE IF NOT EXISTS chart_data_1min (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 symbol TEXT NOT NULL,
                 datetime TEXT NOT NULL,
@@ -60,7 +60,7 @@ class AutomatedDataCollector:
                 UNIQUE(symbol, datetime)
             )
         ''')
-        conn.execute('CREATE INDEX IF NOT EXISTS idx_symbol_datetime ON chart_data_5min(symbol, datetime)')
+        conn.execute('CREATE INDEX IF NOT EXISTS idx_symbol_datetime ON chart_data_1min(symbol, datetime)')
         conn.commit()
         conn.close()
         logging.info(f"データベース準備完了: {self.db_path}")
@@ -102,7 +102,7 @@ class AutomatedDataCollector:
         """1銘柄のデータを収集"""
         try:
             ticker = yf.Ticker(symbol)
-            df = ticker.history(period='5d', interval='5m')
+            df = ticker.history(period='5d', interval='1m')
             
             if df.empty:
                 return None
@@ -135,7 +135,7 @@ class AutomatedDataCollector:
         for _, row in df.iterrows():
             try:
                 conn.execute('''
-                    INSERT OR IGNORE INTO chart_data_5min 
+                    INSERT OR IGNORE INTO chart_data_1min 
                     (symbol, datetime, open, high, low, close, volume, adj_close, collected_at)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ''', (
